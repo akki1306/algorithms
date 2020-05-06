@@ -5,7 +5,7 @@ import java.util.Arrays;
 
 /**
  * Time complexity O(n)
- * Space Complexity
+ * Space Complexity O(1)
  */
 public class MaximumSumSubArrayK {
 
