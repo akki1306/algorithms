@@ -11,19 +11,17 @@ public class PairWithTargetSum {
         int right = arr.length - 1;
 
         while (left < right) {
-            if (arr[left] + arr[right] == targetSum) {
+            int currentSum = arr[left] + arr[right];
+            if (currentSum == targetSum) {
                 result[0] = left;
                 result[1] = right;
-                break;
-            } else if (arr[left] + arr[right] < targetSum) {
+                return result;
+            } else if (currentSum < targetSum) {
                 left++;
-            } else if (arr[left] + arr[right] > targetSum) {
+            } else {
                 right--;
             }
 
-            if (left == right - 1 && !(arr[left] + arr[right] == targetSum)) {
-                break;
-            }
         }
         return result;
     }
