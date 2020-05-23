@@ -6,8 +6,6 @@ public class PairWithTargetSum {
     }
 
     public static int[] search(int[] arr, int targetSum) {
-        // TODO: Write your code here
-
         int[] result = new int[]{-1, -1};
         int left = 0;
         int right = arr.length - 1;
